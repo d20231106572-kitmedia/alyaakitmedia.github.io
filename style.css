@@ -9,10 +9,10 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar fixed */
+/* Navbar fixed & modern */
 nav {
     background-color: #ff4da6;
-    padding: 20px 40px; /* lebih ruang untuk tajuk besar */
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,14 +20,14 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 
 nav h1 {
     color: #fff;
     margin: 0;
-    font-size: 1.6em; /* cukup untuk tajuk penuh */
-    white-space: nowrap; /* elak tajuk pecah baris */
+    font-size: 1.6em;
+    white-space: nowrap;
 }
 
 nav ul {
@@ -55,13 +55,13 @@ nav ul li a:hover {
 /* Hero / Landing Section */
 .hero {
     text-align: center;
-    padding: 160px 20px 80px; /* top padding cukup untuk navbar fixed */
+    padding: 180px 20px 100px; /* top padding untuk navbar fixed */
     background: linear-gradient(135deg, #ffb3d9, #ff4da6);
     color: white;
     border-radius: 15px;
     max-width: 900px;
     margin: 40px auto 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .hero h2 {
@@ -71,18 +71,19 @@ nav ul li a:hover {
 
 .hero p {
     font-size: 1.3em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 35px;
     background-color: #ff4da6;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 1.1em;
 }
 
 .btn:hover {
@@ -104,7 +105,7 @@ nav ul li a:hover {
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
@@ -120,13 +121,14 @@ nav ul li a:hover {
 
 .card a {
     display: inline-block;
-    margin-top: 10px;
-    padding: 12px 20px;
+    margin-top: 15px;
+    padding: 12px 25px;
     background-color: #ff4da6;
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .card a:hover {
@@ -136,18 +138,19 @@ nav ul li a:hover {
 /* Main content page */
 main {
     background-color: #fff0f5;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     max-width: 900px;
-    margin: 140px auto 40px; /* top margin supaya tak tertutup navbar */
+    margin: 140px auto 40px; /* top margin untuk navbar fixed */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #ffe6f0;
     font-size: 14px;
     color: #555;
+    margin-top: 40px;
 }
