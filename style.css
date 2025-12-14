@@ -1,52 +1,95 @@
 body {
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff0f6;
+    color: #4a044e;
 }
 
-.home-container {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #f0f8ff;
-}
-
-.home-container h1 {
-    font-size: 3em;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0077cc;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
+/* NAVBAR */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
+    background: linear-gradient(to right, #ff4da6, #ff85c0);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 20px;
+    color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.navbar a:hover {
-    background-color: #575757;
+.navbar a:hover,
+.navbar a.active {
+    border-bottom: 2px solid white;
 }
 
-section {
-    padding: 50px 20px;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #ff85c0, #ffcce6);
+    color: white;
 }
 
-.responsive-img {
-    max-width: 100%;
-    height: auto;
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    color: #ff4da6;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 77, 166, 0.4);
+}
+
+.btn:hover {
+    background: #ffe0f0;
+}
+
+/* CONTENT */
+.content {
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(255, 77, 166, 0.15);
+}
+
+.card h3 {
+    color: #ff4da6;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff4da6;
+    color: white;
 }
