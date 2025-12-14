@@ -1,14 +1,16 @@
+/* ========== GOOGLE FONT ========== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* ========== BODY ========== */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #fff5fa;
-    color: #3f0037;
+    background: #fff5fa; /* soft pink */
+    color: #3f0037;      /* dark pink / purple */
     line-height: 1.6;
 }
 
-/* ================= NAVBAR ================= */
+/* ========== NAVBAR ========== */
 .navbar {
     background: linear-gradient(to right, #ff5fa2, #ff8dc7);
     padding: 16px 40px;
@@ -45,7 +47,7 @@ body {
     border-bottom: 2px solid white;
 }
 
-/* ================= HERO ================= */
+/* ========== HERO ========== */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -65,7 +67,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* ================= BUTTON ================= */
+/* ========== BUTTON ========== */
 .btn {
     background: linear-gradient(to right, #ff5fa2, #ff8dc7);
     color: white;
@@ -81,7 +83,7 @@ body {
     opacity: 0.9;
 }
 
-/* ================= CONTENT ================= */
+/* ========== CONTENT ========== */
 .content {
     max-width: 1100px;
     margin: auto;
@@ -90,12 +92,12 @@ body {
 
 .content h1 {
     text-align: center;
-    color: #b8005d;
+    color: #b8005d; /* pink Barbie */
     font-size: 38px;
     margin-bottom: 30px;
 }
 
-/* ================= CARD ================= */
+/* ========== CARD ========== */
 .card {
     background: white;
     padding: 35px;
@@ -119,7 +121,7 @@ body {
     padding-left: 20px;
 }
 
-/* ================= FOOTER ================= */
+/* ========== FOOTER ========== */
 footer {
     text-align: center;
     padding: 18px;
