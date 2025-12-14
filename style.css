@@ -31,6 +31,7 @@ body {
     display: flex;
     gap: 28px;
     margin: 0;
+    padding: 0;
 }
 
 .navbar a {
@@ -73,6 +74,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     box-shadow: 0 8px 25px rgba(255, 95, 162, 0.35);
+    display: inline-block;
 }
 
 .btn:hover {
@@ -86,14 +88,11 @@ body {
     padding: 70px 30px;
 }
 
-.content h1,{
+.content h1 {
     text-align: center;
     color: #b8005d;
-}
-
-.content h1 {
     font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /* ================= CARD ================= */
