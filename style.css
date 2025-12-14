@@ -129,3 +129,18 @@ footer {
     color: white;
     font-size: 14px;
 }
+
+/* ========== ICONS / IMAGE CLASS OPTIONAL ========== */
+.icon, .logo-img, .hero-img {
+    vertical-align: middle;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.hero-img {
+    width: 180px;
+    margin-bottom: 20px;
+}
