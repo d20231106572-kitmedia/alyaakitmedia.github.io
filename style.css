@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Poppins', Arial, sans-serif;
-    background: #fff0f6;
-    color: #4a044e;
+    font-family: 'Poppins', sans-serif;
+    background: #fff5fa;
+    color: #3f0037;
+    line-height: 1.6;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
-    background: linear-gradient(to right, #ff4da6, #ff85c0);
-    color: white;
-    padding: 15px 30px;
+    background: linear-gradient(to right, #ff5fa2, #ff8dc7);
+    padding: 16px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,20 +19,24 @@ body {
 
 .logo {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 28px;
     margin: 0;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .navbar a:hover,
@@ -38,58 +44,94 @@ body {
     border-bottom: 2px solid white;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(to bottom, #ff85c0, #ffcce6);
-    color: white;
+    background: linear-gradient(to bottom, #ffd1e8, #fff5fa);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #b8005d;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
+    color: #5c0048;
+    margin-bottom: 35px;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 .btn {
-    background: white;
-    color: #ff4da6;
-    padding: 14px 30px;
-    border-radius: 30px;
+    background: linear-gradient(to right, #ff5fa2, #ff8dc7);
+    color: white;
+    padding: 14px 36px;
+    border-radius: 40px;
     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(255, 77, 166, 0.4);
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(255, 95, 162, 0.35);
 }
 
 .btn:hover {
-    background: #ffe0f0;
+    opacity: 0.9;
 }
 
-/* CONTENT */
+/* ================= CONTENT ================= */
 .content {
-    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 30px;
 }
 
+.content h1,
+.content h2 {
+    text-align: center;
+    color: #b8005d;
+}
+
+.content h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* ================= CARD ================= */
 .card {
     background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(255, 77, 166, 0.15);
+    padding: 35px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(255, 95, 162, 0.15);
 }
 
 .card h3 {
-    color: #ff4da6;
+    color: #ff5fa2;
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
-/* FOOTER */
+.card p,
+.card ul {
+    font-size: 16px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #ff4da6;
+    padding: 18px;
+    background: #ff5fa2;
     color: white;
+    font-size: 14px;
 }
