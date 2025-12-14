@@ -1,13 +1,14 @@
-/* Reset asas */
+/* Asas body */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #ffe6f0; /* soft pink background */
+    background-color: #ffe6f0; /* soft pink */
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #ff4da6; /* pink Barbie */
     color: #fff;
@@ -19,17 +20,19 @@ header h1 {
     margin: 0;
 }
 
+/* Main content box */
 main {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff0f5; /* light pink content box */
+    background-color: #fff0f5; /* light pink */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Headings */
 h2 {
-    color: #ff1a75; /* darker pink for headings */
+    color: #ff1a75; /* dark pink */
     margin-top: 20px;
 }
 
@@ -38,6 +41,7 @@ h3 {
     margin-top: 15px;
 }
 
+/* List items */
 ul {
     padding-left: 20px;
 }
@@ -46,6 +50,7 @@ li {
     margin-bottom: 10px;
 }
 
+/* Link */
 a {
     color: #ff4da6;
     text-decoration: none;
@@ -55,19 +60,22 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Button style */
 .btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #ff4da6; /* pink button */
+    background-color: #ff4da6;
     color: #fff;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #e60073; /* darker pink hover */
+    background-color: #e60073;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
