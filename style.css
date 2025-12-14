@@ -1,0 +1,77 @@
+/* Reset asas */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6f0; /* soft pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff4da6; /* pink Barbie */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff0f5; /* light pink content box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff1a75; /* darker pink for headings */
+    margin-top: 20px;
+}
+
+h3 {
+    color: #ff3399;
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ff4da6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff4da6; /* pink button */
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e60073; /* darker pink hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffe6f0;
+    margin-top: 20px;
+    font-size: 14px;
+}
