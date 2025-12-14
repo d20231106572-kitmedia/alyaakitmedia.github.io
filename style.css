@@ -86,8 +86,7 @@ body {
     padding: 70px 30px;
 }
 
-.content h1,
-.content h2 {
+.content h1,{
     text-align: center;
     color: #b8005d;
 }
