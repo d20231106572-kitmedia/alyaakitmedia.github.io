@@ -6,16 +6,16 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #333;
-  background: #fff;
+  color: #7ec8e3;             /* text soft blue */
+  background-color: #f9b8d3;   /* soft pink background */
 }
 
 /* ===================== NAVBAR ===================== */
 nav {
-  position: fixed; /* navbar atas semua */
+  position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(90deg, #7ec8e3, #f9b8d3); /* soft blue → soft pink */
+  background: #f9b8d3; /* soft pink */
   padding: 15px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -23,7 +23,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #7ec8e3; /* soft blue */
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
@@ -34,45 +34,43 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===================== HOME LANDSCAPE ===================== */
+/* ===================== HOME FULL SCREEN ===================== */
 .container.center {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* center vertical */
   align-items: center;      /* center horizontal */
   text-align: center;
-  min-height: 80vh;         /* landscape feeling */
+  min-height: 80vh;         /* landscape feel */
   max-width: 100%;
-  padding: 60px 80px;       /* lebih horizontal space */
-  background: linear-gradient(135deg, #f9b8d3, #7ec8e3); /* pink → blue */
+  padding: 60px 80px;
 }
 
-/* Tajuk & Subtajuk */
 .container.center h1 {
   font-size: 60px;
-  color: #ffffff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  color: #7ec8e3; /* soft blue */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
   margin: 0;
 }
 
 .container.center h3 {
   font-size: 36px;
-  color: #ffffff;
+  color: #7ec8e3; /* soft blue */
   margin: 20px 0;
 }
 
 .container.center p {
   font-size: 20px;
-  color: #fff;
+  color: #7ec8e3; /* soft blue */
 }
 
 /* Button */
 button {
-  background: #f9b8d3; /* soft pink */
+  background: #7ec8e3; /* soft blue button */
   border: none;
   padding: 15px 40px;
   border-radius: 40px;
-  color: white;
+  color: #f9b8d3; /* soft pink text */
   font-size: 20px;
   cursor: pointer;
   margin-top: 30px;
@@ -80,37 +78,27 @@ button {
 }
 
 button:hover {
-  background: #7ec8e3; /* soft blue hover */
+  background: #ffffff; /* white hover for contrast */
+  color: #7ec8e3;
 }
 
-/* ===================== GENERAL CONTAINER ===================== */
-.container {
-  padding: 80px 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Card / Box */
+/* ===================== CARDS ===================== */
 .card {
-  background: white;
+  background: #ffffff; /* putih untuk nota/aktiviti */
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   margin-bottom: 30px;
+  color: #7ec8e3; /* soft blue text */
 }
 
 /* Headings inside cards */
 h1, h2 {
-  color: #f9b8d3; /* soft pink */
+  color: #7ec8e3; /* soft blue */
 }
 
 h3 {
   color: #7ec8e3; /* soft blue */
-}
-
-/* Center text class */
-.center {
-  text-align: center;
 }
 
 /* Inputs & Textarea */
@@ -121,6 +109,7 @@ input, textarea {
   border-radius: 10px;
   border: 1px solid #ccc;
   font-size: 16px;
+  color: #333;
 }
 
 /* Links inside cards */
@@ -136,31 +125,14 @@ input, textarea {
 
 /* ===================== RESPONSIVE ===================== */
 @media screen and (max-width: 1024px) {
-  .container.center h1 {
-    font-size: 50px;
-  }
-  .container.center h3 {
-    font-size: 30px;
-  }
-  button {
-    font-size: 18px;
-    padding: 12px 30px;
-  }
-  nav a {
-    font-size: 16px;
-    margin: 0 10px;
-  }
+  .container.center h1 { font-size: 50px; }
+  .container.center h3 { font-size: 30px; }
+  button { font-size: 18px; padding: 12px 30px; }
+  nav a { font-size: 16px; margin: 0 10px; }
 }
 
 @media screen and (max-width: 768px) {
-  .container.center h1 {
-    font-size: 42px;
-  }
-  .container.center h3 {
-    font-size: 26px;
-  }
-  button {
-    font-size: 16px;
-    padding: 10px 25px;
-  }
+  .container.center h1 { font-size: 42px; }
+  .container.center h3 { font-size: 26px; }
+  button { font-size: 16px; padding: 10px 25px; }
 }
