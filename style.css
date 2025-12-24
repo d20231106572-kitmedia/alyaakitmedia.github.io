@@ -1,18 +1,47 @@
-/* Pastikan body & html ambil full height */
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* GLOBAL BODY */
 html, body {
   height: 100%;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fff;
 }
 
-/* Home container full screen */
+/* ===================== NAVBAR ===================== */
+nav {
+  position: fixed; /* navbar atas semua */
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #7ec8e3, #f9b8d3); /* soft blue → soft pink */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== HOME FULL SCREEN ===================== */
 .container.center {
   display: flex;
   flex-direction: column;
   justify-content: center; /* center vertically */
-  align-items: center;    /* center horizontally */
+  align-items: center;     /* center horizontally */
   text-align: center;
-  height: 100vh;          /* 100% viewport height */
+  height: 100vh;           /* full viewport height */
   padding: 0 40px;
   background: linear-gradient(135deg, #f9b8d3, #7ec8e3); /* soft pink → soft blue */
 }
@@ -38,7 +67,7 @@ html, body {
 
 /* Button */
 button {
-  background: #f9b8d3;
+  background: #f9b8d3; /* soft pink */
   border: none;
   padding: 15px 40px;
   border-radius: 40px;
@@ -46,8 +75,78 @@ button {
   font-size: 20px;
   cursor: pointer;
   margin-top: 30px;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #7ec8e3;
+  background: #7ec8e3; /* soft blue hover */
+}
+
+/* ===================== GENERAL CONTAINER ===================== */
+.container {
+  padding: 80px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card / Box */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+/* Headings inside cards */
+h1, h2 {
+  color: #f9b8d3; /* soft pink */
+}
+
+h3 {
+  color: #7ec8e3; /* soft blue */
+}
+
+/* Center text class */
+.center {
+  text-align: center;
+}
+
+/* Inputs & Textarea */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Links inside cards (optional styling) */
+.card a {
+  color: #7ec8e3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 768px) {
+  .container.center h1 {
+    font-size: 48px;
+  }
+  .container.center h3 {
+    font-size: 28px;
+  }
+  button {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+  nav a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
 }
