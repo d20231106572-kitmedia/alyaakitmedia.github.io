@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #333;
 }
 
 nav {
-  background: linear-gradient(90deg, #4da6ff, #ff6fae);
+  background: linear-gradient(90deg, #7ec8e3, #f9b8d3);
   padding: 15px;
   text-align: center;
 }
@@ -24,12 +21,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.container {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
 .card {
   background: white;
   padding: 25px;
@@ -39,15 +30,15 @@ nav a:hover {
 }
 
 h1, h2 {
-  color: #ff6fae;
+  color: #f9b8d3; /* Soft pink */
 }
 
 h3 {
-  color: #4da6ff;
+  color: #7ec8e3; /* Soft blue */
 }
 
 button {
-  background: #ff6fae;
+  background: #f9b8d3; /* Soft pink */
   border: none;
   padding: 12px 25px;
   border-radius: 30px;
@@ -57,17 +48,5 @@ button {
 }
 
 button:hover {
-  background: #4da6ff;
-}
-
-.center {
-  text-align: center;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  background: #7ec8e3; /* Soft blue hover */
 }
