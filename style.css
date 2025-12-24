@@ -1,7 +1,7 @@
 /* IMPORT FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* GLOBAL BODY */
+/* ===================== GLOBAL BODY ===================== */
 html, body {
   height: 100%;
   margin: 0;
@@ -34,16 +34,17 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===================== HOME FULL SCREEN ===================== */
+/* ===================== HOME LANDSCAPE ===================== */
 .container.center {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* center vertically */
-  align-items: center;     /* center horizontally */
+  justify-content: center;  /* center vertical */
+  align-items: center;      /* center horizontal */
   text-align: center;
-  height: 100vh;           /* full viewport height */
-  padding: 0 40px;
-  background: linear-gradient(135deg, #f9b8d3, #7ec8e3); /* soft pink → soft blue */
+  min-height: 80vh;         /* landscape feeling */
+  max-width: 100%;
+  padding: 60px 80px;       /* lebih horizontal space */
+  background: linear-gradient(135deg, #f9b8d3, #7ec8e3); /* pink → blue */
 }
 
 /* Tajuk & Subtajuk */
@@ -122,7 +123,7 @@ input, textarea {
   font-size: 16px;
 }
 
-/* Links inside cards (optional styling) */
+/* Links inside cards */
 .card a {
   color: #7ec8e3;
   text-decoration: none;
@@ -134,12 +135,12 @@ input, textarea {
 }
 
 /* ===================== RESPONSIVE ===================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container.center h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
   .container.center h3 {
-    font-size: 28px;
+    font-size: 30px;
   }
   button {
     font-size: 18px;
@@ -148,5 +149,18 @@ input, textarea {
   nav a {
     font-size: 16px;
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container.center h1 {
+    font-size: 42px;
+  }
+  .container.center h3 {
+    font-size: 26px;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px 25px;
   }
 }
