@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ms">
 <head>
-  <title>Aktiviti</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktiviti - Kit Media Interaktif</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="kuiz.html">Kuiz</a>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Cikgu Alyaa</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="set-induksi.html">Set Induksi</a></li>
+      <li><a href="nota.html">Nota</a></li>
+      <li><a href="aktiviti.html" class="active">Aktiviti</a></li>
+      <li><a href="kuiz.html">Kuiz</a></li>
+      <li><a href="refleksi.html">Refleksi</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
-  <div class="card">
-    <h2>🧠 Aktiviti Caesar Cipher</h2>
-    <p>Masukkan perkataan (Shift +3):</p>
-    <input type="text" id="plain">
-    <br><br>
-    <button onclick="encrypt()">Sulitkan</button>
-    <p>Hasil: <b id="cipher"></b></p>
-  </div>
-</div>
+  <section class="content">
+    <h1>Aktiviti</h1>
+    <div class="card">
+      <p>Lengkapkan aktiviti berikut untuk memahami konsep:</p>
+      <ul>
+        <li>Penyulitan data menggunakan Caesar Cipher</li>
+        <li>Menyahsulit mesej menggunakan teknik yang sama</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Hak Cipta &copy; 2025 Cikgu Alyaa | Sains Komputer Tingkatan 5
+  </footer>
 
 </body>
 </html>
