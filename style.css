@@ -35,7 +35,7 @@ html, body {
 }
 
 /* ===============================
-   NAVBAR (LEFT MENU + RIGHT TEXT)
+   NAVBAR ( RIGHT TEXT)
    =============================== */
 nav {
   position: sticky;
@@ -49,15 +49,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* LEFT MENU */
-.nav-left a {
-  margin-right: 22px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-dark);
 }
 
 .nav-left a:hover {
