@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ms">
 <head>
-  <title>Kuiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuiz - Kit Media Interaktif</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="refleksi.html">Refleksi</a>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Cikgu Alyaa</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="set-induksi.html">Set Induksi</a></li>
+      <li><a href="nota.html">Nota</a></li>
+      <li><a href="aktiviti.html">Aktiviti</a></li>
+      <li><a href="kuiz.html" class="active">Kuiz</a></li>
+      <li><a href="refleksi.html">Refleksi</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
-  <div class="card">
-    <h2>📝 Kuiz</h2>
+  <section class="content">
+    <h1>Kuiz</h1>
+    <div class="card">
+      <p>Jawab soalan interaktif di sini:</p>
+      <input type="text" placeholder="Masukkan jawapan anda">
+      <a href="#" class="btn">Hantar</a>
+    </div>
+  </section>
 
-    <p>1. Tujuan penyulitan data ialah?</p>
-    <input type="radio" id="q1"> Melindungi data<br><br>
-
-    <p>2. Caesar Cipher menggunakan?</p>
-    <input type="radio" id="q2"> Pengalihan huruf<br><br>
-
-    <p>3. Cetak rompak perisian menyebabkan?</p>
-    <input type="radio" id="q3"> Kerugian syarikat<br><br>
-
-    <button onclick="checkQuiz()">Semak Jawapan</button>
-    <p id="result"></p>
-  </div>
-</div>
+  <footer>
+    Hak Cipta &copy; 2025 Cikgu Alyaa | Sains Komputer Tingkatan 5
+  </footer>
 
 </body>
 </html>
