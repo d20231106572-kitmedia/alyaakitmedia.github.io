@@ -1,6 +1,6 @@
 /* =========================================
-   TEACHER WEBSITE – BARBIE PINK (PRO)
-   Hero Layout | Classroom | Desktop First
+   TEACHER WEBSITE – BARBIE PINK (FINAL)
+   Clean Navbar | Hero Layout | Classroom
    ========================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -35,7 +35,7 @@ html, body {
 }
 
 /* ===============================
-   NAVBAR
+   NAVBAR (LEFT MENU + RIGHT TEXT)
    =============================== */
 nav {
   position: sticky;
@@ -43,28 +43,31 @@ nav {
   width: 100%;
   background: var(--card-white);
   border-bottom: 1px solid var(--border-light);
-  padding: 16px 50px;
+  padding: 16px 40px;
   z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav .logo {
-  font-weight: 700;
-  color: var(--accent-pink);
-  font-size: 18px;
-}
-
-nav a {
+/* LEFT MENU */
+.nav-left a {
+  margin-right: 22px;
   text-decoration: none;
-  margin-left: 22px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-dark);
 }
 
-nav a:hover {
+.nav-left a:hover {
+  color: var(--accent-pink);
+}
+
+/* RIGHT TEXT */
+.nav-right {
+  font-size: 15px;
+  font-weight: 600;
   color: var(--primary-blue);
 }
 
@@ -74,14 +77,14 @@ nav a:hover {
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 90px 50px;
+  padding: 90px 40px;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
   gap: 50px;
 }
 
-/* Left text */
+/* LEFT TEXT */
 .hero-text {
   text-align: left;
 }
@@ -89,7 +92,6 @@ nav a:hover {
 .hero-text h1 {
   font-size: 54px;
   font-weight: 700;
-  color: var(--text-dark);
   margin-bottom: 8px;
 }
 
@@ -110,7 +112,7 @@ nav a:hover {
   max-width: 520px;
 }
 
-/* Buttons */
+/* HERO BUTTONS */
 .hero-buttons {
   margin-top: 30px;
 }
@@ -141,7 +143,7 @@ nav a:hover {
   opacity: 0.85;
 }
 
-/* Right image */
+/* RIGHT IMAGE */
 .hero-img img {
   width: 100%;
   max-width: 420px;
@@ -150,7 +152,7 @@ nav a:hover {
 }
 
 /* ===============================
-   SECTIONS
+   CONTENT SECTIONS
    =============================== */
 section {
   max-width: 1100px;
@@ -260,8 +262,9 @@ footer {
     padding: 14px 20px;
   }
 
-  nav a {
-    margin: 8px;
+  .nav-left a {
+    margin: 8px 12px;
+    display: inline-block;
   }
 
   .hero {
