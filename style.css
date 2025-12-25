@@ -1,138 +1,210 @@
-/* IMPORT FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* ===============================
+   PROFESSIONAL EDUCATION THEME
+   Soft Blue + Soft Pink
+   =============================== */
 
-/* ===================== GLOBAL BODY ===================== */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #7ec8e3;             /* text soft blue */
-  background-color: #f9b8d3;   /* soft pink background */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===== ROOT COLOR SYSTEM ===== */
+:root {
+  --primary-blue: #4f9fd8;
+  --secondary-pink: #f3c1d9;
+  --background-light: #f9fafc;
+  --card-white: #ffffff;
+  --text-dark: #2c3e50;
+  --text-muted: #6b7b8c;
+  --border-light: #e6eaf0;
 }
 
-/* ===================== NAVBAR ===================== */
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAVBAR (Teacher Style)
+   =============================== */
 nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  background: #f9b8d3; /* soft pink */
-  padding: 15px 0;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: var(--card-white);
+  border-bottom: 1px solid var(--border-light);
+  padding: 14px 40px;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
-  color: #7ec8e3; /* soft blue */
+  margin: 0 18px;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  font-size: 18px;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 16px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: var(--primary-blue);
 }
 
-/* ===================== HOME FULL SCREEN ===================== */
+/* ===============================
+   HOME / LANDING PAGE
+   =============================== */
 .container.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* center vertical */
-  align-items: center;      /* center horizontal */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
   text-align: center;
-  min-height: 80vh;         /* landscape feel */
-  max-width: 100%;
-  padding: 60px 80px;
 }
 
 .container.center h1 {
-  font-size: 60px;
-  color: #7ec8e3; /* soft blue */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
 }
 
 .container.center h3 {
-  font-size: 36px;
-  color: #7ec8e3; /* soft blue */
-  margin: 20px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 25px;
 }
 
 .container.center p {
-  font-size: 20px;
-  color: #7ec8e3; /* soft blue */
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Button */
+/* ===== MAIN BUTTON ===== */
 button {
-  background: #7ec8e3; /* soft blue button */
+  margin-top: 35px;
+  padding: 14px 36px;
+  border-radius: 10px;
   border: none;
-  padding: 15px 40px;
-  border-radius: 40px;
-  color: #f9b8d3; /* soft pink text */
-  font-size: 20px;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
-  margin-top: 30px;
-  transition: 0.3s;
+  transition: all 0.25s ease;
 }
 
 button:hover {
-  background: #ffffff; /* white hover for contrast */
-  color: #7ec8e3;
+  background: #3c8dc6;
 }
 
-/* ===================== CARDS ===================== */
+/* ===============================
+   CONTENT SECTIONS
+   =============================== */
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* ===============================
+   CARDS (Notes, Activities, Quiz)
+   =============================== */
 .card {
-  background: #ffffff; /* putih untuk nota/aktiviti */
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background: var(--card-white);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 28px;
   margin-bottom: 30px;
-  color: #7ec8e3; /* soft blue text */
 }
 
-/* Headings inside cards */
-h1, h2 {
-  color: #7ec8e3; /* soft blue */
+.card h2 {
+  font-size: 26px;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
 }
 
-h3 {
-  color: #7ec8e3; /* soft blue */
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* Inputs & Textarea */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+.card p, .card li {
   font-size: 16px;
-  color: #333;
+  color: var(--text-dark);
 }
 
-/* Links inside cards */
-.card a {
-  color: #7ec8e3;
-  text-decoration: none;
-  font-weight: 600;
+/* ===== Highlight box (Set Induksi / Info penting) ===== */
+.highlight {
+  background: #eef6fc;
+  border-left: 5px solid var(--primary-blue);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.card a:hover {
-  text-decoration: underline;
+/* ===============================
+   INPUTS (Quiz / Reflection)
+   =============================== */
+input, textarea, select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  margin-top: 8px;
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media screen and (max-width: 1024px) {
-  .container.center h1 { font-size: 50px; }
-  .container.center h3 { font-size: 30px; }
-  button { font-size: 18px; padding: 12px 30px; }
-  nav a { font-size: 16px; margin: 0 10px; }
+textarea {
+  resize: vertical;
 }
 
-@media screen and (max-width: 768px) {
-  .container.center h1 { font-size: 42px; }
-  .container.center h3 { font-size: 26px; }
-  button { font-size: 16px; padding: 10px 25px; }
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+  background: var(--card-white);
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 1024px) {
+  .container.center h1 {
+    font-size: 46px;
+  }
+  .container.center h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 14px 20px;
+  }
+
+  nav a {
+    margin: 8px 12px;
+  }
+
+  .container.center {
+    padding: 60px 20px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
 }
