@@ -1,22 +1,22 @@
-/* ===============================
-   PROFESSIONAL EDUCATION THEME
-   Soft Blue + Soft Pink
-   =============================== */
+/* =========================================
+   TEACHER WEBSITE – BARBIE PINK EDITION
+   Professional | Classroom | Centered
+   ========================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ===== ROOT COLOR SYSTEM ===== */
+/* ===== COLOR SYSTEM ===== */
 :root {
-  --primary-blue: #6fa8dc;       /* soft blue */
-  --secondary-pink: #f6c1da;     /* barbie pastel pink */
-  --background-light: #fde8f2;   /* soft pink background */
+  --primary-blue: #6fa8dc;        /* soft blue */
+  --secondary-pink: #f6c1da;      /* barbie pink */
+  --background-light: #fde8f2;    /* pink background */
   --card-white: #ffffff;
   --text-dark: #2b2b2b;
   --text-muted: #6f6f6f;
   --border-light: #f3c7dd;
 }
 
-/* ===== GLOBAL RESET ===== */
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
 }
@@ -27,11 +27,12 @@ html, body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background-light);
   color: var(--text-dark);
+  text-align: center;
   line-height: 1.6;
 }
 
 /* ===============================
-   NAVBAR (Teacher Style)
+   NAVBAR
    =============================== */
 nav {
   position: sticky;
@@ -39,7 +40,7 @@ nav {
   width: 100%;
   background: var(--card-white);
   border-bottom: 1px solid var(--border-light);
-  padding: 14px 40px;
+  padding: 16px 40px;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -49,7 +50,7 @@ nav a {
   margin: 0 18px;
   text-decoration: none;
   color: var(--text-dark);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -63,36 +64,35 @@ nav a:hover {
 .container.center {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 40px;
-  text-align: center;
+  padding: 90px 40px;
 }
 
 .container.center h1 {
   font-size: 56px;
   font-weight: 700;
   color: var(--primary-blue);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .container.center h3 {
   font-size: 28px;
   font-weight: 500;
   color: var(--text-muted);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .container.center p {
   font-size: 18px;
   color: var(--text-muted);
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
-/* ===== MAIN BUTTON ===== */
+/* ===== BUTTON ===== */
 button {
   margin-top: 35px;
-  padding: 14px 36px;
-  border-radius: 10px;
+  padding: 14px 40px;
+  border-radius: 12px;
   border: none;
   background: var(--primary-blue);
   color: #ffffff;
@@ -103,11 +103,11 @@ button {
 }
 
 button:hover {
-  background: #3c8dc6;
+  background: #4f90c5;
 }
 
 /* ===============================
-   CONTENT SECTIONS
+   SECTIONS
    =============================== */
 section {
   max-width: 1100px;
@@ -116,20 +116,23 @@ section {
 }
 
 /* ===============================
-   CARDS (Notes, Activities, Quiz)
+   CARD (NOTA / AKTIVITI / KUIZ)
    =============================== */
 .card {
   background: var(--card-white);
   border: 1px solid var(--border-light);
-  border-radius: 14px;
-  padding: 28px;
-  margin-bottom: 30px;
+  border-radius: 18px;
+  padding: 32px;
+  margin: 0 auto 35px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(246, 193, 218, 0.35);
 }
 
 .card h2 {
   font-size: 26px;
   color: var(--primary-blue);
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .card h3 {
@@ -137,29 +140,39 @@ section {
   margin-bottom: 10px;
 }
 
-.card p, .card li {
+.card p,
+.card li {
   font-size: 16px;
   color: var(--text-dark);
-}
-
-/* ===== Highlight box (Set Induksi / Info penting) ===== */
-.highlight {
-  background: #eef6fc;
-  border-left: 5px solid var(--primary-blue);
-  padding: 20px;
-  border-radius: 10px;
+  list-style-position: inside;
 }
 
 /* ===============================
-   INPUTS (Quiz / Reflection)
+   HIGHLIGHT BOX (SET INDUKSI)
    =============================== */
-input, textarea, select {
-  width: 100%;
+.highlight {
+  background: #eef6fc;
+  border-left: 6px solid var(--primary-blue);
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===============================
+   FORM / QUIZ / REFLECTION
+   =============================== */
+input,
+textarea,
+select {
+  width: 90%;
+  max-width: 500px;
   padding: 12px 14px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border-light);
-  margin-top: 8px;
+  margin: 12px auto;
+  display: block;
+  text-align: center;
 }
 
 textarea {
@@ -173,7 +186,7 @@ footer {
   background: var(--card-white);
   border-top: 1px solid var(--border-light);
   text-align: center;
-  padding: 25px;
+  padding: 28px;
   font-size: 14px;
   color: var(--text-muted);
 }
@@ -183,8 +196,9 @@ footer {
    =============================== */
 @media (max-width: 1024px) {
   .container.center h1 {
-    font-size: 46px;
+    font-size: 48px;
   }
+
   .container.center h3 {
     font-size: 24px;
   }
@@ -201,7 +215,7 @@ footer {
   }
 
   .container.center {
-    padding: 60px 20px;
+    padding: 70px 20px;
   }
 
   section {
