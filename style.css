@@ -190,7 +190,27 @@ footer {
 .close:hover {
     color: #b8005d;
 }
+/* ===============================
+   POSTER NOTA (INI YANG SEBELUM NI SALAH)
+   =============================== */
+.poster-container {
+  text-align: center;
+  margin: 30px 0;
+}
 
+.poster-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.25);
+}
+
+.poster-caption {
+  font-size: 0.9rem;
+  color: #5c0048;
+  margin-top: 10px;
+  font-style: italic;
+}
 /* Responsive */
 @media (max-width: 1024px) {
     .hero h1 {
