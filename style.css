@@ -230,40 +230,6 @@ footer {
   font-style: italic;
   text-align: center;
 }
-/* ===============================
-   AKTIVITI & PETA MINDA GRID
-   =============================== */
-.activity-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive kolum */
-    gap: 40px;
-    align-items: start;      /* centre vertikal antara poster & teks */
-    justify-items: center;   /* centre card horizontal */
-    margin-top: 30px;
-}
-
-.activity-grid .card {
-    margin-bottom: 0; /* card dalam grid guna margin gap grid */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; /* pastikan teks & poster centre */
-}
-
-.activity-grid .card img.poster-img {
-    display: block;
-    margin: 0 auto; /* centre poster horizontal */
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .activity-grid {
-        grid-template-columns: 1fr; /* satu kolum untuk tablet & phone */
-    }
-    .activity-grid .card {
-        text-align: center; /* pastikan teks & poster tetap centre */
-    }
-}
 
 /* Responsive */
 @media (max-width: 1024px) {
