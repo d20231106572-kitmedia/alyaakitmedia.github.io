@@ -256,6 +256,16 @@ footer {
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .activity-grid {
+        grid-template-columns: 1fr; /* satu kolum untuk tablet & phone */
+    }
+    .activity-grid .card {
+        text-align: center; /* pastikan teks & poster tetap centre */
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
     .hero h1 {
         font-size: 42px;
     }
