@@ -199,8 +199,8 @@ footer {
 }
 
 .poster-img {
-  width: 100%;
-  max-width: 100%;  /* ikut lebar card */
+  width: 70%;
+  max-width: 70%;  /* ikut lebar card */
   height: auto;     /* maintain aspect ratio */
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
