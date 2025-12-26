@@ -146,8 +146,8 @@ footer {
 }
 
 .logo-img {
-  width: 40px;   /* saiz logo */
-  height: 40px;
+  width: 60px;   /* saiz logo */
+  height: 60px;
   border-radius: 50%; /* bulatkan logo */
   object-fit: cover;
 }
