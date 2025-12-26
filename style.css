@@ -230,17 +230,6 @@ footer {
   font-style: italic;
   text-align: center;
 }
-/* ===============================
-   PETA MINDA DIGITAL CENTER
-   =============================== */
-.card img.poster-img {
-    display: block;
-    margin: 0 auto;  /* centre horizontal */
-}
-
-.card .poster-caption {
-    text-align: center;  /* centre caption */
-}
 
 /* Responsive */
 @media (max-width: 1024px) {
