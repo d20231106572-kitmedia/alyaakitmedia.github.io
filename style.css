@@ -268,4 +268,63 @@ footer {
     .hero p {
         font-size: 16px;
     }
+    /* ===============================
+   TEACHER MASCOT - REFLEKSI
+   =============================== */
+
+.teacher-mascot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px auto 30px;
+  text-align: left;
+  animation: floatMascot 3s ease-in-out infinite;
+}
+
+.teacher-img {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.teacher-question {
+  background: #ffe6f2;
+  color: #5c0048;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  max-width: 320px;
+  position: relative;
+}
+
+.teacher-question::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #ffe6f2 transparent transparent;
+}
+
+@keyframes floatMascot {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .teacher-mascot {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teacher-question::before {
+    display: none;
+  }
+}
 } 
