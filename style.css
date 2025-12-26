@@ -270,59 +270,53 @@ footer {
     }
 } 
 /* ===============================
-   TEACHER MASCOT - REFLEKSI
+   TEACHER MASCOT - FLOATING FREE
    =============================== */
 
 .teacher-mascot {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin: 25px auto 30px;
-  animation: floatMascot 3s ease-in-out infinite;
+  margin: 10px auto 30px;
+  cursor: pointer;
+  animation: floatMascot 3.5s ease-in-out infinite;
 }
 
+/* Icon cikgu */
 .teacher-img {
-  width: 90px;
+  width: 95px;
+  height: auto;
   border-radius: 50%;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: transparent;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.35);
 }
 
+/* Teks refleksi (tanpa frame) */
 .teacher-question {
-  background: #ffe6f2;
-  color: #5c0048;
-  padding: 12px 18px;
-  border-radius: 20px;
-  font-size: 0.95rem;
-  max-width: 320px;
-  position: relative;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b8005d;
+  text-align: center;
+  background: transparent;
 }
 
-.teacher-question::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent #ffe6f2 transparent transparent;
+/* Hover effect */
+.teacher-mascot:hover .teacher-img {
+  transform: scale(1.08);
+  transition: 0.3s;
 }
 
+/* Animasi terapung */
 @keyframes floatMascot {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
   100% { transform: translateY(0); }
 }
 
-/* Responsive khas mascot */
+/* Mobile */
 @media (max-width: 600px) {
-  .teacher-mascot {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .teacher-question::before {
-    display: none;
+  .teacher-img {
+    width: 80px;
   }
 }
