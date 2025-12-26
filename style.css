@@ -191,7 +191,7 @@ footer {
     color: #b8005d;
 }
 /* ===============================
-   POSTER NOTA (INI YANG SEBELUM NI SALAH)
+   POSTER NOTA
    =============================== */
 .poster-container {
   text-align: center;
@@ -211,6 +211,7 @@ footer {
   margin-top: 10px;
   font-style: italic;
 }
+
 /* Responsive */
 @media (max-width: 1024px) {
     .hero h1 {
