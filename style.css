@@ -112,7 +112,57 @@ body {
   color: #ff5fa2;
   margin-bottom: 15px;
 }
-
+/* =============================== 
+MODAL CIKGU DENGAN GAMBAR
+=============================== */ 
+.modal { display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 0; 
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        background-color: rgba(0,0,0,0.5);
+       } 
+.modal:target{ 
+  display: block;
+} 
+.modal-content { background-color: #fff0f7; 
+                margin: 10% auto; 
+                padding: 30px;
+                border-radius: 20px; 
+                width: 80%; max-width: 450px; 
+                text-align: center;
+                box-shadow: 0 15px 40px rgba(255, 95, 162, 0.3);
+                color: #3f0037; 
+               } 
+.modal-img {
+  width: 140px; 
+  height: 140px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  margin: 0 auto 15px auto; 
+  display: block; 
+  border: 3px solid #ff5fa2;
+} 
+.modal-content h2 {
+  color: #ff5fa2; 
+  margin-bottom: 15px;
+} 
+.modal-content p {
+  margin: 10px 0; 
+  font-size: 16px; 
+} 
+.close {
+  color: #ff5fa2;
+  float: right; 
+  font-size: 28px; 
+  font-weight: bold; 
+  text-decoration: none;
+} 
+.close:hover {
+  color: #b8005d;
+}
 /* ===============================
    POSTER NOTA 
    =============================== */
