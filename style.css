@@ -135,6 +135,22 @@ footer {
     color: white;
     font-size: 14px;
 }
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  gap: 10px; /* jarak antara gambar & teks */
+}
+
+.logo-img {
+  width: 40px;   /* saiz logo */
+  height: 40px;
+  border-radius: 50%; /* bulatkan logo */
+  object-fit: cover;
+}
 
 /* ===============================
    MODAL CIKGU DENGAN GAMBAR
