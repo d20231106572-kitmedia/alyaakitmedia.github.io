@@ -1,237 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #fff0f7;
-    color: #3f0037;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff0f7;
+  color: #3f0037;
+  line-height: 1.6;
 }
 
-/* Navbar */
+/* ===============================
+   NAVBAR
+   =============================== */
 .navbar {
-    background: #ff5fa2;
-    padding: 16px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  background: #ff5fa2;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
 .navbar .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
 }
+
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 28px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
 }
+
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding-bottom: 4px;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: 0.3s;
 }
+
 .navbar a:hover,
 .navbar a.active {
-    border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
-/* Hero Section */
+/* ===============================
+   HERO
+   =============================== */
 .hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to bottom right, #ffe1f2, #fff0f7);
-}
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #b8005d;
-    margin-bottom: 15px;
-}
-.hero p {
-    font-size: 20px;
-    color: #5c0048;
-    margin-bottom: 40px;
-}
-.hero .btn {
-    background: linear-gradient(to right, #ff5fa2, #ff8dc7);
-    color: white;
-    padding: 16px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 10px 30px rgba(255, 95, 162, 0.35);
-    transition: 0.3s;
-}
-.hero .btn:hover {
-    transform: translateY(-3px);
-    opacity: 0.95;
-}
-/* ===============================
-   HERO / TINGKATAN 5
-   =============================== */
-.hero .tingkatan {
-    font-size: 28px;
-    font-weight: 600;
-    color: #b8005d;
-    margin: 10px 0;
-}
-/* Content / Cards */
-.content {
-    max-width: 1100px;
-    margin: auto;
-    padding: 70px 30px;
-}
-.content h1 {
-    text-align: center;
-    color: #b8005d;
-    font-size: 38px;
-    margin-bottom: 50px;
-}
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(255, 95, 162, 0.15);
-    margin-bottom: 40px;
-}
-.card h3 {
-    color: #ff5fa2;
-    margin-bottom: 15px;
-}
-.card ul {
-    padding-left: 20px;
-}
-textarea,
-input[type="text"] {
-    width: 90%;
-    max-width: 500px;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ff8dc7;
-    margin: 10px auto;
-    display: block;
-    text-align: center;
-}
-.card .btn {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px 15px;
-    background: #ff5fa2;
-    color: white;
-    font-size: 14px;
-}
-
-/* ===============================
-   MODAL CICGU DENGAN GAMBAR
-   =============================== */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.modal:target {
-    display: block;
-}
-.modal-content {
-    background-color: #fff0f7;
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 20px;
-    width: 80%;
-    max-width: 450px;
-    text-align: center;
-    box-shadow: 0 15px 40px rgba(255, 95, 162, 0.3);
-    color: #3f0037;
-}
-.modal-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 15px auto;
-    display: block;
-    border: 3px solid #ff5fa2;
-}
-.modal-content h2 {
-    color: #ff5fa2;
-    margin-bottom: 15px;
-}
-.modal-content p {
-    margin: 10px 0;
-    font-size: 16px;
-}
-.close {
-    color: #ff5fa2;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: none;
-}
-.close:hover {
-    color: #b8005d;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 42px;
-    }
-    .hero p {
-        font-size: 18px;
-    }
-}
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .navbar ul {
-        gap: 16px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .hero h1 {
-        font-size: 36px;
-    }
-    .hero p {
-        font-size: 16px;
-    }
-    .poster-container {
   text-align: center;
-  margin: 20px 0;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom right, #ffe1f2, #fff0f7);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #b8005d;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #5c0048;
+}
+
+.hero .btn {
+  background: linear-gradient(to right, #ff5fa2, #ff8dc7);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(255, 95, 162, 0.35);
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   CONTENT & CARD
+   =============================== */
+.content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 30px;
+}
+
+.content h1 {
+  text-align: center;
+  color: #b8005d;
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(255, 95, 162, 0.15);
+  margin-bottom: 40px;
+}
+
+.card h3 {
+  color: #ff5fa2;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   POSTER NOTA 
+   =============================== */
+.poster-container {
+  text-align: center;
+  margin: 30px 0;
 }
 
 .poster-img {
   width: 100%;
   max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.25);
 }
 
 .poster-caption {
   font-size: 0.9rem;
-  color: #555;
-  margin-top: 8px;
+  color: #5c0048;
+  margin-top: 10px;
   font-style: italic;
 }
+
+/* ===============================
+   FORM
+   =============================== */
+textarea,
+input[type="text"] {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ff8dc7;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #ff5fa2;
+  color: white;
+  font-size: 14px;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
 }
