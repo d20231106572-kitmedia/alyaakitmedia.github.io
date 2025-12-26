@@ -195,21 +195,24 @@ footer {
    =============================== */
 .poster-container {
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .poster-img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.25);
+  max-width: 100%;  /* ikut lebar card */
+  height: auto;     /* maintain aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  object-fit: contain; /* pastikan poster tak terpotong */
 }
 
 .poster-caption {
   font-size: 0.9rem;
   color: #5c0048;
-  margin-top: 10px;
+  margin-top: 8px;
   font-style: italic;
+  text-align: center;
 }
 
 /* Responsive */
