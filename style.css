@@ -235,9 +235,10 @@ footer {
    =============================== */
 .activity-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* dua kolum: poster & teks */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive kolum */
     gap: 40px;
-    align-items: center; /* centre vertikal antara poster & teks */
+    align-items: start;      /* centre vertikal antara poster & teks */
+    justify-items: center;   /* centre card horizontal */
     margin-top: 30px;
 }
 
@@ -255,7 +256,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .activity-grid {
         grid-template-columns: 1fr; /* satu kolum untuk tablet & phone */
     }
